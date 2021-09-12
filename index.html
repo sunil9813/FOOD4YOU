@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="container flex">
+      <div class="left top">
+        <h2>Are You Hungry?</h2>
+        <h1>DONT WAIT !</h1>
+        <h3>LET START TO ORDER FOOD NOW</h3>
+        <hr>
+        <div class="add flex">
+          <div class="text">
+            <h5>THIS MONADY</h5>
+            <h5>HAPPY HOURS</h5>
+          </div>
+          <div class="num">
+            <h1> 1+1 = 3</h1>
+          </div>
+        </div>
+        <button>ORDER NOW</button>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/b2.png" alt="">
+        </div>
+        <img src="image/home.png" alt="">
+        <div class="img flex1">
+          <img src="image/b3.png" alt="">
+          <img src="image/b1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="services background">
+    <div class="container">
+      <div class="heading center">
+        <h1>CHOOSE & ENJOY</h1>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="content grid center">
+        <div class="box">
+          <img src="image/s1.jpg" alt="">
+          <h3>FOOD ITEM ONE</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>ORDER NOW</button>
+        </div>
+        <div class="box">
+          <img src="image/s2.jpg" alt="">
+          <h3>FOOD ITEM TWO</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>ORDER NOW</button>
+        </div>
+        <div class="box">
+          <img src="image/s3.jpg" alt="">
+          <h3>FOOD ITEM THREE</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>ORDER NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="discover background">
+    <div class="heading center">
+      <h3>DISCOVER</h3>
+      <h1>UPCOMMING EVENTS</h1>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="content flex">
+      <div class="img">
+        <img src="image/d1.jpeg" alt="">
+      </div>
+      <div class="img">
+        <img src="image/d2.png" alt="">
+      </div>
+      <div class="img">
+        <img src="image/d3.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery background">
+    <div class="container">
+      <div class="content flex">
+        <div class="left">
+          <div class="box">
+            <div class="img">
+              <img src="image/g1.png" alt="">
+            </div>
+            <div class="text">
+              <p>TRY IT TODAY</p>
+              <h2>MOST <br> POPULAR <br> PASTA</h2>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            <div class="img">
+              <img src="image/g2.png" alt="">
+            </div>
+            <div class="text">
+              <p>TRY IT TODAY</p>
+              <h2>MOST FUN <br> MORE TASTE</h2>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/g3.png" alt="">
+            </div>
+            <div class="text">
+              <p>TRY IT TODAY</p>
+              <h2>MOST FUN <br> MORE TASTE</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="contact background">
+    <div class="container">
+      <div class="heading center">
+        <h5>RESERVATION</h5>
+        <h1>BOOK YPUR TABLE</h1>
+      </div>
+
+      <form class="grid">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Date">
+        <input type="text" placeholder="Time">
+        <input type="text" placeholder="People">
+        <input type="submit" placeholder="FIND A TABLE">
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="content grid">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="address">
+          <i class="fa fa-map"></i>
+          <label>Main Road,Nepal</label><br>
+
+          <i class="fa fa-phone"></i>
+          <label>+977 981325892</label><br>
+
+          <i class="fa fa-envelope"></i>
+          <label>yourdemo@gmailc.om</label><br>
+        </div>
+        <div class="legal">
+          <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+        </div>
+        <div class="icon">
+          <ul>
+            <li> <i class="fa fa-facebook"></i> </li>
+            <li> <i class="fa fa-instagram"></i> </li>
+            <li> <i class="fa fa-twitter"></i> </li>
+            <li> <i class="fa fa-youtube"></i> </li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
